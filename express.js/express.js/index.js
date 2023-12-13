@@ -20,7 +20,7 @@ app.get("/add", function(req, res){
 
 //product 
 app.post("/product", function(req,res){
-    var product = 0; 
+    var product = 1; 
     req.body['array'].forEach((element) => product = product * element);
     res.json({"multiplied values": product});
 })
